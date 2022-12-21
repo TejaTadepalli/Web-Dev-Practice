@@ -7,4 +7,5 @@ This is a simple project that uses CSS transitions to expand and contract cards 
 <br>
 
 # Output:
-<img src="Day1\Output.PNG" alt="DAY1">
+
+<img src="Output.JPG" alt="DAY1">
