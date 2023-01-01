@@ -10,6 +10,6 @@ This is a simple project that has a split landing page with a toggle button to s
 
 <img src="Output1.JPG" alt="DAY7: Initial Landing Page">
 
-<img src="Output2.JPG" alt="DAY7: Side 1">
+<img src="Output2.png" alt="DAY7: Side 1">
 
-<img src="Output3.JPG" alt="Day7: Side 2">
+<img src="Output3.png" alt="Day7: Side 2">
