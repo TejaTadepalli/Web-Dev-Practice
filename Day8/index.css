@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.container a:hover{
+    background-color: #555;
+}
+
+.btn{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.btn:hover{
+    background: #555;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.text{
+    font-size: 16px;
+    margin: 10px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-control:focus{
+    outline: none;
+    border: 1px solid #333;
+}
+
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form-control input:focus, .form-control input:valid{
+    outline: none;
+}
+
+/* Now we are basically Putting the LABEL over the form buttons and will FOCUS them when we click on a particular button*/
+.form-control label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.form-control label span{
+    position: inline-block;
+    font-size: 18px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    min-width: 5px;
+}
+
+.form-control input:focus + label span, .form-control input:valid + label span{
+    transform: translateY(-30px);
+    font-size: 12px;
+    color: #333;
+}
